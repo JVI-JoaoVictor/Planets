@@ -1,0 +1,181 @@
+/* ====RESET============ */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+/* ====VARIABLES=========== */
+:root {
+  font-size: 62.5%;
+
+  /* text color */
+  --title-color: hsla(0, 0%, 100%, 1);
+  --subTitle-color: hsla(231, 79%, 90%, 1);
+
+  /* fonts-size */
+  --subTitle-font-size: 4rem;
+  --name-font-size: 6rem;
+  --title-font-size: 4.5rem;
+  --text-font-size: 1.9rem;
+  --nav-font-size: 2.2rem;
+
+  /* fonts-family */
+  --title-font: 'Bellefair', sans-serif;
+  --subTitle-font: 'Barlow Condensed', sans-serif;
+  --text-font: 'Barlow', sans-serif;
+}
+
+/* ====HEADER========= */
+
+.grid {
+  display: flex;
+  gap: 8rem;
+}
+
+button:hover,
+:active {
+  opacity: 1;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 597px;
+}
+
+.line {
+  position: absolute;
+  width: 700px;
+  height: 1px;
+  left: 195px;
+  top: 110px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.efect {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 45px;
+  padding-right: 140px;
+  padding-left: 50px;
+}
+.nav {
+  color: var(--title-color);
+  font-family: var(--subTitle-font);
+  font-size: var(--nav-font-size);
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+/*==========BACKGROUND============= */
+#containerImage {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: url(/assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+}
+
+/* ---DISPLAY NONE / BLOCK */
+
+/* #commander, */
+#spaceport,
+#capsule {
+  display: none;
+}
+
+/* =====FIX======= */
+
+#title {
+  font-family: var(--subTitle-font);
+  color: var(--subTitle-color);
+  font-size: var(--subTitle-font-size);
+  letter-spacing: 5px;
+  position: relative;
+  top: 3rem;
+  left: 20rem;
+}
+
+#button {
+  position: relative;
+  width: 500px;
+  bottom: 260px;
+  left: 200px;
+  display: grid;
+}
+
+button:hover{
+  cursor: pointer;
+  color: rgb(138, 136, 135); 
+}
+
+button {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  border-color: #ffffff;
+  height: 100px;
+  padding: 50px;
+  border-radius: 50%;
+  opacity: 0.5;
+  margin: 4rem 0;
+}
+
+#titleButton {
+  position: relative;
+  color: #ffffff;
+  font-family: var(--text-font);
+  color: var(--title-color);
+  font-size: var(--subTitle-font-size);
+  align-items: center;
+  bottom: 3rem;
+}
+
+/* ======NOT FIX========= */
+
+.photo {
+  position: absolute;
+  bottom: 10px;
+  left: 110rem;
+  max-width: 27vw;
+}
+
+.function {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--text-font-size);
+  opacity: 0.7;
+  position: relative;
+  top: 7rem;
+  left: 40rem;
+}
+
+.name {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--name-font-size);
+  position: relative;
+  left: 40rem;
+  top: 9rem;
+}
+
+.text {
+  color: var(--subTitle-color);
+  font-size: var(--text-font-size);
+  font-family: var(--text-font);
+  position: relative;
+  width: 60rem;
+  left: 42rem;
+  top: 10rem;
+  padding-right: 2rem;
+  line-height: 4rem;
+  text-align: justify;
+}

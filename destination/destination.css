@@ -1,0 +1,257 @@
+/* ====RESET============ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ====VARIABLES=========== */
+:root {
+  /* text color */
+  --title-color: hsla(0, 0%, 100%, 1);
+  --subTitle-color: hsla(231, 79%, 90%, 1);
+
+  /* fonts-size */
+  --subTitle-font-size: 40px;
+  --title-font-size: 160px;
+  --text-font-size: 19px;
+  --nav-font-size: 22px;
+  --destine-font-size: 100px;
+  --number-font-size: 40px;
+
+  /* fonts-family */
+  --title-font: 'Bellefair', sans-serif;
+  --subTitle-font: 'Barlow Condensed', sans-serif;
+  --text-font: 'Barlow', sans-serif;
+}
+
+/* ====HEADER========= */
+
+.grid {
+  display: flex;
+  gap: 5rem;
+}
+
+#header {
+  display: flex;
+  align-items: left;
+  margin-top: 50px;
+  margin-left: 597px;
+}
+
+.line {
+  position: absolute;
+  width: 700px;
+  height: 1px;
+  left: 195px;
+  top: 110px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.efect {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 45px;
+  padding-right: 140px;
+  padding-left: 50px;
+}
+.nav {
+  color: var(--title-color);
+  font-family: var(--subTitle-font);
+  font-size: var(--nav-font-size);
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+/* =========FIX======= */
+#containerImage {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+}
+
+.left {
+  position: absolute;
+  width: 480px;
+  left: 195px;
+  top: 190px;
+}
+
+.subTitle {
+  font-family: var(--subTitle-font);
+  color: var(--subTitle-color);
+  font-size: var(--subTitle-font-size);
+  letter-spacing: 5px;
+}
+
+button {
+  position: relative;
+  left: 950px;
+  top: 70px;
+  color: var(--subTitle-color);
+  font-family: var(--subTitle-font);
+  font-size: var(--nav-font-size);
+  letter-spacing: 3px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  }
+
+button:hover{
+  color: rgb(138, 136, 135);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* =========NOT FIX======== */
+
+/* toggle */
+
+#mars,
+#europa,
+#titan {
+  display: none;
+}
+
+#moon {
+  display: block;
+}
+
+/* ====TODOS==== */
+
+.moon,
+.mars,
+.europa,
+.titan {
+  position: relative;
+  top: 40px;
+  left: 300px;
+}
+
+.text {
+  position: relative;
+  width: 600px;
+  left: 900px;
+  margin-top: -360px;
+}
+
+.titleDestine {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--destine-font-size);
+  letter-spacing: 5px;
+}
+
+.textDestine {
+  color: var(--subTitle-color);
+  font-family: var(--text-font);
+  font-size: var(--text-font-size);
+  line-height: 35px;
+  padding-right: 90px;
+  text-align: justify;
+}
+
+/* =====MOON===== */
+
+.lineBottom {
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  top: 300px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.infoDesntineKm {
+  position: relative;
+  color: var(--subTitle-color);
+  font-family: var(--subTitle-font);
+  font-size: var(--text-font-size);
+  top: 45px;
+  left: 10px;
+}
+
+.infoDestineDays {
+  position: relative;
+  color: var(--subTitle-color);
+  font-family: var(--subTitle-font);
+  font-size: var(--text-font-size);
+  top: 25px;
+  left: 300px;
+}
+.dataDestineKm {
+  position: relative;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--number-font-size);
+  top: 35px;
+  left: 10px;
+}
+
+.dataDestineDays {
+  position: relative;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--number-font-size);
+  left: 300px;
+  top: -10px;
+}
+
+/* ======MARS========= */
+
+.lineBottomMars {
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  top: 270px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.infoDesntineKmMars {
+  position: relative;
+  color: var(--subTitle-color);
+  font-family: var(--subTitle-font);
+  font-size: var(--text-font-size);
+  top: 60px;
+  left: 10px;
+}
+
+.infoDestineDaysMars {
+  position: relative;
+  color: var(--subTitle-color);
+  font-family: var(--subTitle-font);
+  font-size: var(--text-font-size);
+  left: 300px;
+  top: 40px;
+
+}
+.dataDestineKmMars {
+  position: relative;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--number-font-size);
+  left: 10px;
+  top: 55px;
+  
+}
+
+.dataDestineDaysMars {
+  position: relative;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--number-font-size);
+  left: 300px;
+  top: 10px;
+}
