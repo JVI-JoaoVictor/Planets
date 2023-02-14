@@ -19,7 +19,7 @@ ul {
   --title-font-size: 160px;
   --text-font-size: 19px;
   --nav-font-size: 22px;
-  --destine-font-size: 100px;
+  --destine-font-size: 130px;
   --number-font-size: 40px;
 
   /* fonts-family */
@@ -35,11 +35,19 @@ ul {
   gap: 5rem;
 }
 
+.grid-name {
+  display: flex;
+  gap: 3rem;
+}
+
+
 #header {
   display: flex;
   align-items: left;
-  margin-top: 50px;
-  margin-left: 597px;
+  position: relative;
+  top: 50px;
+  justify-content: flex-end;
+  min-width: 1000px;
 }
 
 .line {
@@ -47,7 +55,7 @@ ul {
   width: 700px;
   height: 1px;
   left: 195px;
-  top: 110px;
+  top: 55px;
   background: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.25;
@@ -67,23 +75,40 @@ ul {
   font-size: var(--nav-font-size);
   line-height: 20px;
   letter-spacing: 3px;
-  text-decoration: none;
+  text-decoration: none;  
 }
+
 
 /* =========FIX======= */
 #containerImage {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  background-image: url(./assets/destination/background-destination-desktop.jpg);
+  position: relative;
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
   background-size: cover;
 }
+#container{
+  display: flex;
+  flex-direction: column;  
+  min-width: 1200px;
+}
+#fixe{
+  display: flex;
+  position: relative;
+  top: 4rem;
+}
 
-.left {
-  position: absolute;
-  width: 480px;
-  left: 195px;
-  top: 190px;
+.left{
+  flex: 1;
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+}
+.infos{
+  flex: 1;
+  position: relative;
+  display: flex;
+  margin-left: 3rem;
+  top: 3rem;
 }
 
 .subTitle {
@@ -93,10 +118,8 @@ ul {
   letter-spacing: 5px;
 }
 
+
 button {
-  position: relative;
-  left: 950px;
-  top: 70px;
   color: var(--subTitle-color);
   font-family: var(--subTitle-font);
   font-size: var(--nav-font-size);
@@ -113,6 +136,12 @@ button:hover{
 }
 
 /* =========NOT FIX======== */
+div#container-flex{
+  display: flex;
+  position: relative;
+  top: 5rem;  
+
+}
 
 /* toggle */
 
@@ -120,35 +149,51 @@ button:hover{
 #europa,
 #titan {
   display: none;
+
 }
 
 #moon {
-  display: block;
+  display: flex;
 }
 
 /* ====TODOS==== */
 
+
+
 .moon,
 .mars,
 .europa,
-.titan {
+.titan {  
   position: relative;
-  top: 40px;
-  left: 300px;
+  top: 30px;
+  height: 90%;
+}
+
+.container-planets{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 3rem;
 }
 
 .text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   position: relative;
-  width: 600px;
-  left: 900px;
-  margin-top: -360px;
+  margin-top: 30px;
+  margin-left: 2rem;
 }
 
 .titleDestine {
   color: var(--title-color);
   font-family: var(--title-font);
+  font-weight: 100;
   font-size: var(--destine-font-size);
   letter-spacing: 5px;
+  position: relative;
+  margin-left: 1rem;
 }
 
 .textDestine {
@@ -156,102 +201,57 @@ button:hover{
   font-family: var(--text-font);
   font-size: var(--text-font-size);
   line-height: 35px;
-  padding-right: 90px;
+  letter-spacing: 1px;
+  padding-right: 12rem;
   text-align: justify;
 }
 
-/* =====MOON===== */
-
 .lineBottom {
-  position: absolute;
-  width: 500px;
-  height: 1px;
-  top: 300px;
+  height: 1px; 
+  width: 35rem;
+  margin-top: .5rem;
   background: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.25;
 }
 
-.infoDesntineKm {
-  position: relative;
+
+#container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 2;
+  margin: .7rem;
+  gap: .4rem;
+}
+
+.infoDesntineKm { 
   color: var(--subTitle-color);
   font-family: var(--subTitle-font);
-  font-size: var(--text-font-size);
-  top: 45px;
-  left: 10px;
+  font-size: var(--text-font-size);  
 }
 
 .infoDestineDays {
-  position: relative;
+  
   color: var(--subTitle-color);
   font-family: var(--subTitle-font);
   font-size: var(--text-font-size);
-  top: 25px;
-  left: 300px;
+ 
+
 }
 .dataDestineKm {
-  position: relative;
+ 
   color: var(--title-color);
   font-family: var(--title-font);
   font-size: var(--number-font-size);
-  top: 35px;
-  left: 10px;
+ 
+
 }
 
 .dataDestineDays {
-  position: relative;
-  color: var(--title-color);
-  font-family: var(--title-font);
-  font-size: var(--number-font-size);
-  left: 300px;
-  top: -10px;
-}
-
-/* ======MARS========= */
-
-.lineBottomMars {
-  position: absolute;
-  width: 500px;
-  height: 1px;
-  top: 270px;
-  background: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.25;
-}
-
-.infoDesntineKmMars {
-  position: relative;
-  color: var(--subTitle-color);
-  font-family: var(--subTitle-font);
-  font-size: var(--text-font-size);
-  top: 60px;
-  left: 10px;
-}
-
-.infoDestineDaysMars {
-  position: relative;
-  color: var(--subTitle-color);
-  font-family: var(--subTitle-font);
-  font-size: var(--text-font-size);
-  left: 300px;
-  top: 40px;
-
-}
-.dataDestineKmMars {
-  position: relative;
-  color: var(--title-color);
-  font-family: var(--title-font);
-  font-size: var(--number-font-size);
-  left: 10px;
-  top: 55px;
   
-}
-
-.dataDestineDaysMars {
-  position: relative;
   color: var(--title-color);
   font-family: var(--title-font);
   font-size: var(--number-font-size);
-  left: 300px;
-  top: 10px;
+
+
 }

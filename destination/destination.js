@@ -10,7 +10,7 @@ let titan = document.getElementById('titan')
 
 // MOSTRAR MOON
 displayMoon.addEventListener('click', () => {
-  moon.style.display = 'block'
+  moon.style.display = 'flex'
   mars.style.display = 'none'
   europa.style.display = 'none'
   titan.style.display = 'none'
@@ -18,7 +18,7 @@ displayMoon.addEventListener('click', () => {
 
 // MOSTRAR MARS
 displayMars.addEventListener('click', () => {
-  mars.style.display = 'block'
+  mars.style.display = 'flex'
   moon.style.display = 'none'
   europa.style.display = 'none'
   titan.style.display = 'none'
@@ -26,7 +26,7 @@ displayMars.addEventListener('click', () => {
 
 // MOSTRAR EUROPA
 displayEuropa.addEventListener('click', () => {
-  europa.style.display = 'block'
+  europa.style.display = 'flex'
   moon.style.display = 'none'
   mars.style.display = 'none'
   titan.style.display = 'none'
@@ -34,7 +34,7 @@ displayEuropa.addEventListener('click', () => {
 
 // MOSTRAR TITAN
 displayTitan.addEventListener('click', () => {
-  titan.style.display = 'block'
+  titan.style.display = 'flex'
   moon.style.display = 'none'
   mars.style.display = 'none'
   europa.style.display = 'none'

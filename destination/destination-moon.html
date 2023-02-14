@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <mata name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" 
-    type="image/png" sizes="32x32" 
-    href="./assets/favicon-32x32.png"/>
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../assets/favicon-32x32.png"
+  />
 
      <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css"/>
-   
+  
 
     <link rel="stylesheet" type="text/css" href="/destination/destination.css" />
 
@@ -23,7 +24,6 @@
   </head>
 
 <body id="containerImage">
-<div id="containerImage">
   <header id="header">
         <div class="line"></div>
            <nav class="efect">
@@ -35,31 +35,35 @@
                     >01 DESTINATION</a
                     >
                 </li>
-                <li><a class="nav" href="/crew/crew-commander.html">02 CREW</a/li>
+                <li><a class="nav" href="/crew/crew-commander.html">02 CREW</a></li>
                 <li><a class="nav" href="/technology/technology-vehicle.html">03 TECHNOLOGY</a></li>
               </ul>
             </nav>          
 </header>
-<main>
-    <div class="left">
-      <h1 class="subTitle">01 PICK YOUR DESTINATION</h1>     
-    </div>
-<div class="infos">
-  <div class="select">[
-    <ul class="grid">
-      <li class="Moon"><button id="buttonMoon" href="#moon">MOON</a></li>
-      <li class="Mars"><button id="buttonMars" href="#mars">MARS</a></li>
-      <li class="Europa"><button id="buttonEuropa" href="#europe">EUROPE</a></li>
-      <li class="Titan"><button id="buttonTitan" href="#titan">TITAN</a></li>
-    </ul>
+
+<main id="container">
+<aside id="fixe">
+  <div class="left">
+    <h1 class="subTitle">01 PICK YOUR DESTINATION</h1>     
   </div>
+
+<div class="infos  ">
+<div class="select">
+  <ul class="grid-name">
+    <li class="Moon"><button id="buttonMoon" href="#moon">MOON</a></li>
+    <li class="Mars"><button id="buttonMars" href="#mars">MARS</a></li>
+    <li class="Europa"><button id="buttonEuropa" href="#europe">EUROPE</a></li>
+    <li class="Titan"><button id="buttonTitan" href="#titan">TITAN</a></li>
+  </ul>
+</div>
 <div>
-<div id="textSelection">
+</aside>
 
   <!-- MOON -->
-    <div id="moon">
-      <div>
-        <img class="moon" src="./assets/destination/image-moon.png" alt="Lua">
+<div id="container-flex">
+    <div id="moon" >
+      <div class="container-planets" >
+        <img class="moon" src="../assets/destination/image-moon.png" alt="Lua">
       </div>
       <div class="text">
         <h1 class="titleDestine">MOON</h1>
@@ -68,17 +72,19 @@
         
         </p>
         <div class="lineBottom"></div>
-        <p class="infoDesntineKm">AVG. DISTANCE</p>
-        <p class="infoDestineDays">EST. TRAVEL TIME</p>
-        <p class="dataDestineKm">384,400 KM</p>
-        <p class="dataDestineDays">3 DAYS</p>
+        <div id="container-grid">
+          <p class="infoDesntineKm">AVG. DISTANCE</p>
+          <p class="infoDestineDays">EST. TRAVEL TIME</p>
+          <p class="dataDestineKm">384,400 KM</p>
+          <p class="dataDestineDays">3 DAYS</p>
+        </div>
       </div>
     </div>
 
     <!-- MARS -->
     <div id="mars">
-      <div>
-        <img class="mars" src="./assets/destination/image-mars.png" alt="Lua">
+      <div class="container-planets">
+        <img class="mars" src="../assets/destination/image-mars.png" alt="Lua">
       </div>
       <div class="text">
         <h1 class="titleDestine">MARS</h1>
@@ -86,18 +92,20 @@
           Don't forget to pack your hiking boots. You'll need them to tackle Olumpus Mons, the tallets planetary mountain in our solar system. It's two and a half times the size of Everest
         
         </p>
-        <div class="lineBottomMars"></div>
-        <p class="infoDesntineKmMars">AVG. DISTANCE</p>
-        <p class="infoDestineDaysMars">EST. TRAVEL TIME</p>
-        <p class="dataDestineKmMars">225 MIL. KM</p>
-        <p class="dataDestineDaysMars">9 MONTHS</p>
+        <div class="lineBottom"></div>
+        <div id="container-grid">
+          <p class="infoDesntineKm">AVG. DISTANCE</p>
+          <p class="infoDestineDays">EST. TRAVEL TIME</p>
+          <p class="dataDestineKm">225 MIL. KM</p>
+          <p class="dataDestineDays">9 MONTHS</p>
+        </div>
       </div>
     </div>
   
     <!-- EUROPa -->
     <div id="europa">
-      <div>
-        <img class="europa" src="./assets/destination/image-europa.png" alt="Lua">
+      <div class="container-planets">
+        <img class="europa" src="../assets/destination/image-europa.png" alt="Lua">
       </div>
       <div class="text">
         <h1 class="titleDestine">EUROPA</h1>
@@ -106,16 +114,18 @@
         
         </p>
         <div class="lineBottom"></div>
-        <p class="infoDesntineKm">AVG. DISTANCE</p>
-        <p class="infoDestineDays">EST. TRAVEL TIME</p>
-        <p class="dataDestineKm">628 MIL. KM</p>
-        <p class="dataDestineDays">3 YEARS</p>
+        <div id="container-grid">
+          <p class="infoDesntineKm">AVG. DISTANCE</p>
+          <p class="infoDestineDays">EST. TRAVEL TIME</p>
+          <p class="dataDestineKm">628 MIL. KM</p>
+          <p class="dataDestineDays">3 YEARS</p>
+        </div>
       </div>
     </div>
 
     <div id="titan">
-      <div>
-        <img class="titan" src="./assets/destination/image-titan.png" alt="Lua">
+      <div class="container-planets">
+        <img class="titan" src="../assets/destination/image-titan.png" alt="Lua">
       </div>
       <div class="text">
         <h1 class="titleDestine">TITAN</h1>
@@ -124,16 +134,18 @@
         
         </p>
         <div class="lineBottom"></div>
-        <p class="infoDesntineKm">AVG. DISTANCE</p>
-        <p class="infoDestineDays">EST. TRAVEL TIME</p>
-        <p class="dataDestineKm">1.6 BIL. KM</p>
-        <p class="dataDestineDays">7 YEARS</p>
+        <div id="container-grid">
+          <p class="infoDesntineKm">AVG. DISTANCE</p>
+          <p class="infoDestineDays">EST. TRAVEL TIME</p>
+          <p class="dataDestineKm">1.6 BIL. KM</p>
+          <p class="dataDestineDays">7 YEARS</p>
+        </div>
       </div>
     </div>
 
   </div>
 </main> 
 
-<script src="destination.js"></script>
 </body>
+<script src="destination.js"></script>
 </html>
