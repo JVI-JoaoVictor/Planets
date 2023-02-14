@@ -81,7 +81,13 @@ ul {
 
 /* =========FIX======= */
 #containerImage {
+<<<<<<< HEAD
   position: relative;
+=======
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+>>>>>>> e956c72124be69eb3f8c692cb409982f36cb128c
   background-image: url(../assets/destination/background-destination-desktop.jpg);
   background-size: cover;
 }
