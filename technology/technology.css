@@ -163,6 +163,7 @@ button {
   color: var(--title-color);
   font-family: var(--title-font);
   font-size: var(--name-font-size);
+  font-weight: 400;
   position: relative;
   left: 40rem;
   top: 9rem;

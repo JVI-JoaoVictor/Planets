@@ -111,6 +111,7 @@ button:hover,
   color: var(--title-color);
   font-family: var(--title-font);
   font-size: var(--title-font-size);
+  font-weight: 400;
 }
 
 .text {
@@ -165,6 +166,7 @@ button:hover,
   position: relative;
   font-size: 50px;
   font-family: var(--title-font);
+  font-weight: 400;
   letter-spacing: 4px;
   color: hsla(230, 35%, 7%, 1);
   text-decoration: none;
